@@ -1,0 +1,69 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK APPLICANTS' PORTAL
+{% endblock %}
+
+{% block content %}
+
+<main class="elements-index" id="content" role="main" tabindex="-1">
+
+  {% include "includes/phase_banner.html" %}
+  {% include "includes/breadcrumb.html" %}
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-large">
+        GOV.UK APPLICANTS' PORTAL
+      </h1>
+
+      <p class="lede">
+        Showing all applicants
+      </p>
+
+    </div>
+  </div>
+  
+    
+    <div id="candidate-listings">
+        <div class="grid-row">            
+            <div class="column-full"> 
+                <div class="candidate-listing" style="border: 2px solid #6f777b; padding: 20px; margin-bottom: 50px"> 
+                    <h2 class="heading-medium"><a href="/applicant">Candidate Name</a></h2>
+                    <p> Job Applied For: </p>
+                    <p> <a href="/applicant"> View Candidate's Profile</a></p>                
+                </div>
+            </div>               
+        </div>
+        
+        <div class="grid-row">            
+            <div class="column-full"> 
+                <div class="candidate-listing" style="border: 2px solid #6f777b; padding: 20px; margin-bottom: 50px"> 
+                    <h2 class="heading-medium"><a href="/applicant">Candidate Name</a></h2>
+                    <p> Job Applied For: </p>
+                    <p> <a href="/applicant"> View Candidate's Profile</a></p>                
+                </div>
+            </div>               
+        </div>
+        
+        <div class="grid-row">            
+            <div class="column-full"> 
+                <div class="candidate-listing" style="border: 2px solid #6f777b; padding: 20px; margin-bottom: 50px"> 
+                    <h2 class="heading-medium"><a href="/applicant">Candidate Name</a></h2>
+                    <p> Job Applied For: </p>
+                    <p> <a href="/applicant"> View Candidate's Profile</a></p>                
+                </div>
+            </div>               
+        </div>
+    </div>
+  </main><!-- / #content -->
+{% endblock %}
+
+{% block body_end %}
+  <!-- GOV.UK elements redirect -->
+  <script src="/public/javascripts/redirect.js"></script>
+  {% include "includes/scripts.html" %}
+{% endblock %}
+
+

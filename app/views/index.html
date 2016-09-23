@@ -1,0 +1,83 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK APPLICANTS' PORTAL
+{% endblock %}
+
+{% block content %}
+
+<main class="elements-index" id="content" role="main" tabindex="-1">
+
+  {% include "includes/phase_banner.html" %}
+  {% include "includes/breadcrumb.html" %}
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-large">
+        GOV.UK APPLICANTS' PORTAL
+      </h1>
+
+      <p class="lede">
+        Discover unique skills of candidates, fast and easy.
+      </p>
+
+    </div>
+  </div>
+
+    
+    <div id="ja-hero">
+        <div class="grid-row">   
+            <div class="column-two-thirds" style="background-color: #005EA5; color: #FFF; margin-left: 15px">
+              <h3 class="heading-medium">To get started</h3>        
+              <ol class="list list-number">
+                  <li>Select a Candidate by clicking their name</li>
+                  <li>Find out more information about your chosen candidate on the candidate's profile page</li>            
+              </ol>
+          </div>
+          </div>  
+    </div>
+  
+  
+    
+
+  
+    <div class="divider" id="candidate-listings">
+        <div class="grid-row">            
+            <div class="column-one-half"> 
+                <div class="candidate-listing" style="border: 2px solid #6f777b; padding: 20px"> 
+                    <h2 class="heading-medium"><a href="/applicant">Candidate Name</a></h2>
+                    <p> Job Applied For: </p>
+                    <p> <a href="/applicant"> View Candidate's Profile</a></p>                
+                </div>
+            </div>    
+
+            <div class="column-one-half"> 
+                <div class="candidate-listing" style="border: 2px solid #6f777b; padding: 20px"> 
+                    <h2 class="heading-medium"><a href="/applicant">Candidate Name</a></h2>
+                    <p> Job Applied For: </p>
+                    <p> <a href="/applicant"> View Candidate's Profile</a></p>                
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    <div id="view-all-applicants-nav" class="divider">
+        <div class="grid-row" id="view-all-applicants">        
+            <div class="column-full">
+                <a class="button button-start" href="/all-applicants/" role="button">View all applicants</a>
+            </div>
+        </div>      
+    </div>
+    
+
+</main><!-- / #content -->
+{% endblock %}
+
+{% block body_end %}
+  <!-- GOV.UK elements redirect -->
+  <script src="/public/javascripts/redirect.js"></script>
+  {% include "includes/scripts.html" %}
+{% endblock %}
+
+

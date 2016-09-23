@@ -1,0 +1,65 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK APPLICANTS' PORTAL
+{% endblock %}
+
+{% block content %}
+
+<main class="elements-index" id="content" role="main" tabindex="-1">
+
+  {% include "includes/phase_banner.html" %}
+  {% include "includes/breadcrumb.html" %}
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-large">
+        GOV.UK APPLICANTS' PORTAL
+      </h1>
+
+      <p class="lede">
+        Applicant's Profile
+      </p>            
+    </div>
+  </div>
+  
+    <div id="candidate-profile">
+        <div class="grid-row">
+            <div class="column-one-third" >
+                <img src="/public/images/profile.png" alt="profile image using 3:2" width="240" height="160">
+            </div>
+            <div class="column-two-thirds candidate-listing"> 
+                    <h2 class="heading-medium">Candidate Name</h2>
+                    <ul class="list">
+                        <li>Age: 26 years</li>                        
+                        <li>Nationality: Nigerian</li>     
+                        <li>Job Applied for: </li>     
+                        <li>Date of Birth: </li>     
+                    </ul>                    
+            </div>
+        </div>
+        
+        <div class="grid-row">
+            <div class="column-full candidate-listing"> 
+               <h3 class="heading-small">Work Experience</h3> 
+                <ol class="list list-number">
+                 <li>here is a numbered list</li>
+                 <li>vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor</li>
+                 <li>vestibulum id ligula porta felis euismod semper</li>
+                 <li>integer posuere erat a ante venenatis dapibus posuere velit aliquet</li>
+               </ol>
+            </div>    
+        </div>                                        
+    </div>                
+
+</main><!-- / #content -->
+{% endblock %}
+
+{% block body_end %}
+  <!-- GOV.UK elements redirect -->
+  <script src="/public/javascripts/redirect.js"></script>
+  {% include "includes/scripts.html" %}
+{% endblock %}
+
+

@@ -1,8 +1,8 @@
 {
-  "name": "govuk-elements-sass",
-  "version": "2.0.0",
-  "description": "GOVUK elements Sass files",
-  "repository": "alphagov/govuk_elements",
+  "name": "job_application",
+  "version": "1.0.0",
+  "description": "A simple web application ",
+  "repository": "https://github.com/paultofunmi/job_application",
   "license": "MIT",
   "engines": {
     "node": ">=4.4.7"
@@ -42,8 +42,5 @@
       "public/javascripts/vendor/",
       "tests"
     ]
-  },
-  "bugs": {
-    "url": "https://github.com/alphagov/govuk_elements/issues"
   }
 }
